@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #244D3A;
+  --color-forest-dark: #1A392B;
+  --color-forest-light: #2E5F48;
+  --color-sage: #A8BEA3;
+  --color-sage-light: #C3D4BF;
+  --color-sage-dark: #8BA486;
+  --color-mint: #DFE9D9;
+  --color-mint-light: #EFF5EC;
+  --color-cream: #F8F4EA;
+  --color-cream-light: #FDFBF7;
+  --color-cream-dark: #EDE5D2;
+  --color-wood: #6B4633;
+  --color-wood-dark: #4E3123;
+  --color-wood-light: #8A5C43;
+  --color-charcoal: #282824;
+  --color-charcoal-muted: #595852;
+  --color-terracotta: #B96551;
+  --color-terracotta-dark: #9E4D3A;
+  --color-terracotta-light: #CE816F;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-devanagari: "Noto Sans Devanagari", "Plus Jakarta Sans", sans-serif;
+  --font-devanagari-heading: "Rozha One", "Noto Sans Devanagari", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    font-family: var(--font-sans);
+    color: var(--color-charcoal);
+    background-color: var(--color-cream);
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 4.5rem;
+    }
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F8F4EA;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #A8BEA3;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #244D3A;
+  }
+}
+
+/* Store inspired decorative elements */
+.arch-top {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.wood-texture-overlay {
+  background-image: radial-gradient(rgba(107, 70, 51, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.wood-panel-bg {
+  background-color: #4F3224;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(rgba(0,0,0,0.15) 1px, transparent 1px);
+  background-size: 40px 100%, 100% 40px;
+}
+
+/* Glassmorphism header backdrop */
+.nav-glass {
+  background: rgba(248, 244, 234, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Prevent horizontal overflow globally */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* All images should be contained */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Grid children: prevent content from blowing out grid tracks */
+.grid > * {
+  min-width: 0;
+}
+
+/* Hide scrollbar utility (used for filter pill rows) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area support for modern iOS */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
