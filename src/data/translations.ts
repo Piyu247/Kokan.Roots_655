@@ -75,7 +75,7 @@ export const translations = {
     // Specialities Banner
     specialitiesBadge: "Regional Treasures",
     specialitiesHeading: "Authentic Coastal Treasures",
-    specialitiesDescription: "From tangy sun-dried Amboshi and pure Kokum agal to freshly pounded Malvani spices, taste the distinct culinary signature of Maharashtra's Konkan coast.",
+    specialitiesDescription: "From tangy sun-dried Amboshi and pure Kokam agal to freshly pounded Malvani spices, taste the distinct culinary signature of Maharashtra's Konkan coast.",
     exploreSpecialitiesBtn: "Explore Specialities",
 
     // Why Us

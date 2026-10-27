@@ -23,7 +23,7 @@ The category navigation has been structured into **exactly 9 consolidated catego
 | 2 | **Cashews & Nuts** | `cashews-nuts` | 10 products | `/assets/images/kaju_cashews.jpg` |
 | 3 | **Flours, Rice & Grains** | `flours-rice-grains` | 11 products | `/assets/images/flours_rice_grains.jpg` |
 | 4 | **Spices & Masalas** | `spices-masalas` | 7 products | `/assets/images/konkan_specialities.jpg` |
-| 5 | **Kokum & Fruit Specials** | `kokum-fruit-specials` | 11 products | `/assets/products/05_Kokum_and_Fruit_Specials/Gavathi_Kokum_250g_175.webp` |
+| 5 | **Kokam & Fruit Specials** | `kokum-fruit-specials` | 11 products | `/assets/products/05_Kokum_and_Fruit_Specials/Gavathi_Kokum_250g_175.webp` |
 | 6 | **Snacks, Laddus, Chivda & Chakli** | `snacks-laddus-chivda-chakli` | 14 products | `/assets/products/06_Snacks_Laddus_Chivda_Chakli/Boondi_Laadu_20pcs_120.webp` |
 | 7 | **Papads** | `papads` | 6 products | `/assets/products/07_Papads/Nachani_Papad_200g_120.webp` |
 | 8 | **Syrups & Beverages** | `syrups-beverages` | 8 products | `/assets/products/08_Syrups_and_Beverages/Kokum_Sharbat_700ml_195.webp` |
@@ -85,8 +85,8 @@ The following 4 image files exist in `public/assets/products/` but were not part
 
 | # | Product Name | Weight / Vol | Price (₹) | Category | Matched Image Path |
 |---|---|---|---|---|---|
-| 1 | Gavathi Kokum | 250 g | ₹175 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Gavathi_Kokum_250g_175.webp` |
-| 2 | Sweet / Dried Kokum | 100 g | ₹60 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Sweet_Dried_Kokum_100g_60.webp` |
+| 1 | Gavathi Kokam | 250 g | ₹175 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Gavathi_Kokum_250g_175.webp` |
+| 2 | Sweet / Dried Kokam | 100 g | ₹60 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Sweet_Dried_Kokum_100g_60.webp` |
 | 3 | Mango Pickle | 200 g | ₹100 | pickles-chutneys | `/assets/products/01_Pickles_and_Chutneys/mango-pickle-200g.webp` |
 | 4 | Karvand Pickle | 200 g | ₹130 | pickles-chutneys | `/assets/products/01_Pickles_and_Chutneys/karvand-pickle-200g.webp` |
 | 5 | Garlic Pickle | 200 g | ₹140 | pickles-chutneys | `/assets/products/01_Pickles_and_Chutneys/garlic-pickle-200g.webp` |

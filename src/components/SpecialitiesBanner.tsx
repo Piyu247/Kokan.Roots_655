@@ -68,7 +68,7 @@ export const SpecialitiesBanner: React.FC<SpecialitiesBannerProps> = ({
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#E8A598]" />
-                  <span>{language === 'mr' ? 'अस्सल कोकम आगळ व सोलकढी' : 'Natural Kokum Agal'}</span>
+                  <span>{language === 'mr' ? 'अस्सल कोकम आगळ व सोलकढी' : 'Natural Kokam Agal'}</span>
                 </div>
               </div>
 

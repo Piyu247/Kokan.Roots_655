@@ -39,9 +39,9 @@ export const categories: Category[] = [
   },
   {
     id: 'kokum-fruit-specials',
-    nameEn: 'Kokum & Fruit Specials',
+    nameEn: 'Kokam & Fruit Specials',
     nameMr: 'कोकम, आंबोशी व फळ विशेष',
-    descriptionEn: 'Sun-dried sour raw mango slices (Amboshi), natural Kokum rinds, and regional fruit treats.',
+    descriptionEn: 'Sun-dried sour raw mango slices (Amboshi), natural Kokam rinds, and regional fruit treats.',
     descriptionMr: 'उन्हात सुकवलेली गावरान कैरीची आंबोशी, आमसूल आणि पारंपारिक कोकणी फळ प्रक्रिया उत्पादने.',
     image: '/assets/images/kokum_fruit_specials.jpg',
     itemCount: 9
@@ -68,7 +68,7 @@ export const categories: Category[] = [
     id: 'syrups-beverages',
     nameEn: 'Syrups & Beverages',
     nameMr: 'सरबते, आगळ व पेये',
-    descriptionEn: 'Pure natural Kokum agal, tangy Kairi Panhe, Aamras, and refreshing coastal fruit sharbats.',
+    descriptionEn: 'Pure natural Kokam agal, tangy Kairi Panhe, Aamras, and refreshing coastal fruit sharbats.',
     descriptionMr: 'शुद्ध कोकम आगळ, कैऱ्यांचे पन्हे, अमृततुल्य आमरस आणि आरोग्यदायी जांभूळ व आवळा रस.',
     image: '/assets/images/syrups_beverages.jpg',
     itemCount: 9
