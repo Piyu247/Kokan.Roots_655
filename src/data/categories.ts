@@ -8,7 +8,7 @@ export const categories: Category[] = [
     descriptionEn: 'Traditional stone-jar cured raw mango, lemon, mixed country pickles, and coconut chutneys.',
     descriptionMr: 'पारंपारिक चिनी मातीच्या बरणीत मुरवलेले अस्सल घरगुती आंब्याचे व लिंबाचे लोणचे आणि खमंग चटण्या.',
     image: '/assets/images/mango_pickle.jpg',
-    itemCount: 8
+    itemCount: 11
   },
   {
     id: 'cashews-nuts',
@@ -17,7 +17,7 @@ export const categories: Category[] = [
     descriptionEn: 'Crisp whole Konkan cashews, slow-roasted, salted & regional masala spiced.',
     descriptionMr: 'कोकणातील दर्जेदार संपूर्ण काजू, भाजलेले, खारे व चवदार मसालेदार काजू.',
     image: '/assets/images/kaju_cashews.jpg',
-    itemCount: 10
+    itemCount: 11
   },
   {
     id: 'flours-rice-grains',
@@ -26,7 +26,7 @@ export const categories: Category[] = [
     descriptionEn: 'Nutritious hand-pounded red rice poha, heritage Ukada Tandul, and authentic stone-ground flour mixes.',
     descriptionMr: 'लोहयुक्त हातसडीचे लाल पोहे, पोषक उकडा तांदूळ आणि अस्सल मालवणी पिठांचे प्रकार.',
     image: '/assets/images/flours_rice_grains.jpg',
-    itemCount: 11
+    itemCount: 9
   },
   {
     id: 'spices-masalas',
@@ -35,7 +35,7 @@ export const categories: Category[] = [
     descriptionEn: 'Authentic iron-pan roasted Malvani Sunday masala, Gavathi turmeric, and fragrant coastal spice blends.',
     descriptionMr: 'पारंपारिक पद्धतीने भाजून कुटलेला अस्सल मालवणी संडे मसाला व सुगंधी कोकणी मसाले.',
     image: '/assets/images/malvani_masala.jpg',
-    itemCount: 7
+    itemCount: 8
   },
   {
     id: 'kokum-fruit-specials',
@@ -44,7 +44,7 @@ export const categories: Category[] = [
     descriptionEn: 'Sun-dried sour raw mango slices (Amboshi), natural Kokum rinds, and regional fruit treats.',
     descriptionMr: 'उन्हात सुकवलेली गावरान कैरीची आंबोशी, आमसूल आणि पारंपारिक कोकणी फळ प्रक्रिया उत्पादने.',
     image: '/assets/images/kokum_fruit_specials.jpg',
-    itemCount: 11
+    itemCount: 9
   },
   {
     id: 'snacks-laddus-chivda-chakli',
@@ -53,7 +53,7 @@ export const categories: Category[] = [
     descriptionEn: 'Handmade pure ghee laddus, roasted poha chivda, shev, and crispy traditional Konkan savouries.',
     descriptionMr: 'शुद्ध तुपातील खमंग लाडू, कुरकुरीत भाजका पोहा चिवडा, चकली, शेव आणि कोकणी खाजा.',
     image: '/assets/images/snacks_laddus_chivda.jpg',
-    itemCount: 14
+    itemCount: 13
   },
   {
     id: 'papads',
@@ -71,7 +71,7 @@ export const categories: Category[] = [
     descriptionEn: 'Pure natural Kokum agal, tangy Kairi Panhe, Aamras, and refreshing coastal fruit sharbats.',
     descriptionMr: 'शुद्ध कोकम आगळ, कैऱ्यांचे पन्हे, अमृततुल्य आमरस आणि आरोग्यदायी जांभूळ व आवळा रस.',
     image: '/assets/images/syrups_beverages.jpg',
-    itemCount: 8
+    itemCount: 9
   },
   {
     id: 'special-products',
