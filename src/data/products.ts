@@ -1033,18 +1033,18 @@ export const products: Product[] = [
   {
     id: "khajur-dates-200g",
     categoryId: "kokum-fruit-specials",
-    nameEn: "Khajur (Dates)",
-    nameMr: "उत्कृष्ट खजूर",
-    descriptionEn: "Naturally sweet, moist, and nutrient-dense whole dates selected for healthy snacking and natural sweetness.",
-    descriptionMr: "गोड, रसाळ आणि पौष्टिक खजूर. ऊर्जा आणि आरोग्यासाठी उत्तम नैसर्गिक फळ.",
+    nameEn: "Chincha Imli",
+    nameMr: "चिंच इमली",
+    descriptionEn: "Pure Konkan tamarind — tangy, naturally preserved, and essential for authentic Solkadhi, fish curries, chutneys, and daily cooking.",
+    descriptionMr: "अस्सल कोकणी चिंच — आंबट, नैसर्गिक, सोलकढी, मासे कालवण व चटणीसाठी अपरिहार्य.",
     price: 90,
     packageSize: "200 g",
     packageSizeMr: "२०० ग्रॅम",
-    image: "/assets/products/05_Kokum_and_Fruit_Specials/Khajur_Dates_200g_90.webp",
-    badgeEn: "Energy Rich",
-    badgeMr: "पौष्टिक",
-    ingredientsEn: "100% Natural Dates",
-    ingredientsMr: "१००% नैसर्गिक खजूर",
+    image: "/assets/products/05_Kokum_and_Fruit_Specials/Chincha_Imli_200g_90.jpg",
+    badgeEn: "Tangy & Pure",
+    badgeMr: "आंबट व शुद्ध",
+    ingredientsEn: "100% Natural Tamarind",
+    ingredientsMr: "१००% नैसर्गिक चिंच",
     origin: "Konkan Pantry"
   },
   {
@@ -1344,5 +1344,23 @@ export const products: Product[] = [
     ingredientsEn: "Assorted natural Konkan wellness pantry staples (Red Rice, Jamun Ras, etc.)",
     ingredientsMr: "कोकणातील आरोग्यदायी नैसर्गिक उत्पादने",
     origin: "Konkan Herbal Labs"
+  },
+  {
+    id: "gavran-ghee-500g",
+    categoryId: "special-products",
+    nameEn: "Gavran Ghee",
+    nameMr: "गावरान तूप",
+    descriptionEn: "Pure Konkan desi ghee made from the milk of indigenous Gavran cows. Slow-churned using traditional methods for an authentic aroma and rich golden colour.",
+    descriptionMr: "गावरान गायीच्या दुधापासून पारंपारिक पद्धतीने तयार केलेले शुद्ध देशी तूप. सुगंधी, सोनेरी रंगाचे आणि अस्सल कोकणी चव असलेले तूप.",
+    price: 700,
+    packageSize: "500 g",
+    packageSizeMr: "५०० ग्रॅम",
+    image: "/assets/products/09_Special_Products/Gavran_Ghee_500g_700.jpg",
+    badgeEn: "Pure Desi",
+    badgeMr: "शुद्ध देशी",
+    isPopular: true,
+    ingredientsEn: "100% Pure Gavran Cow Ghee",
+    ingredientsMr: "१००% शुद्ध गावरान गाईचे तूप",
+    origin: "Konkan, Maharashtra"
   }
 ];

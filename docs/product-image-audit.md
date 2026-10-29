@@ -1,15 +1,15 @@
 # Kokan Roots — Product Catalogue & Image Audit Report
 
 **Date:** October 25, 2026  
-**Total Catalogue Rows Processed:** 76  
-**Total Valid Products Imported:** 76  
+**Total Catalogue Rows Processed:** 77  
+**Total Valid Products Imported:** 77  
 **Categories Configured:** 9  
 
 ---
 
 ## 1. Executive Summary
 
-The Kokan Roots e-commerce website has been upgraded from a 15-item demo catalogue to the **complete 76-entry authentic Konkan product catalogue**. All 76 catalogue records have been assigned unique IDs, dual-language Marathi/English names, accurate package sizes, updated rupee prices, category tags, and validated WebP image paths from `public/assets/products/`.
+The Kokan Roots e-commerce website has been upgraded from a 15-item demo catalogue to the **complete 77-entry authentic Konkan product catalogue**. All 77 catalogue records have been assigned unique IDs, dual-language Marathi/English names, accurate package sizes, updated rupee prices, category tags, and validated WebP/JPG image paths from `public/assets/products/`.
 
 The category navigation has been structured into **exactly 9 consolidated categories**, each represented by an uncropped, high-resolution product photograph rendered in `object-fit: contain` on a soft cream backdrop.
 
@@ -27,8 +27,8 @@ The category navigation has been structured into **exactly 9 consolidated catego
 | 6 | **Snacks, Laddus, Chivda & Chakli** | `snacks-laddus-chivda-chakli` | 14 products | `/assets/products/06_Snacks_Laddus_Chivda_Chakli/Boondi_Laadu_20pcs_120.webp` |
 | 7 | **Papads** | `papads` | 6 products | `/assets/products/07_Papads/Nachani_Papad_200g_120.webp` |
 | 8 | **Syrups & Beverages** | `syrups-beverages` | 8 products | `/assets/products/08_Syrups_and_Beverages/Kokum_Sharbat_700ml_195.webp` |
-| 9 | **Special Products** | `special-products` | 1 product | `/assets/products/09_Special_Products/Diabetic_Care_Kit_1kit_800.webp` |
-| **Total** | | | **76 products** | |
+| 9 | **Special Products** | `special-products` | 2 products | `/assets/products/09_Special_Products/Gavran_Ghee_500g_700.jpg` |
+| **Total** | | | **77 products** | |
 
 *Dynamic badge logic applies singular/plural grammar correctly:*
 - English: `1 product` / `X products`
@@ -143,7 +143,7 @@ The following 4 image files exist in `public/assets/products/` but were not part
 | 56 | Jeera Kairi | 100 g | ₹100 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Jeera_Kairi_100g_100.webp` |
 | 57 | Sangdi Mirchi | 50 g | ₹60 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Sangdi_Mirchi_50g_60.webp` |
 | 58 | Sangdi Mirchi (Alt Packaging) | 50 g | ₹60 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Sangdi_Mirchi_alternate_packaging_50g_60.webp` |
-| 59 | Khajur (Dates) | 200 g | ₹90 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Khajur_Dates_200g_90.webp` |
+| 59 | Chincha Imli | 200 g | ₹90 | kokum-fruit-specials | `/assets/products/05_Kokum_and_Fruit_Specials/Chincha_Imli_200g_90.jpg` |
 | 60 | Black Pepper Urad Papad | 200 g | ₹100 | papads | `/assets/products/07_Papads/Black_Pepper_Urad_Papad_200g_100.webp` |
 | 61 | Red Chilli Urad Papad | 200 g | ₹100 | papads | `/assets/products/07_Papads/Red_Chilli_Urad_Papad_200g_100.webp` |
 | 62 | Garlic & Green Chilli Papad | 200 g | ₹100 | papads | `/assets/products/07_Papads/Garlic_Green_Chilli_Papad_200g_100.webp` |
@@ -161,3 +161,4 @@ The following 4 image files exist in `public/assets/products/` but were not part
 | 74 | Kairi Panhe | 500 ml | ₹260 | syrups-beverages | `/assets/products/08_Syrups_and_Beverages/Kairi_Panhe_500ml_260.webp` |
 | 75 | Butter Milk-Soaked Sun-Dried Chillies | 50 g | ₹60 | flours-rice-grains | `/assets/products/03_Flours_Rice_and_Grains/Butter_Milk_Soaked_Sun_Dried_Chillies_50g_60.webp` |
 | 76 | Diabetic Care Kit | 1 kit | ₹800 | special-products | `/assets/products/09_Special_Products/Diabetic_Care_Kit_1kit_800.webp` |
+| 77 | Gavran Ghee | 500 g | ₹700 | special-products | `/assets/products/09_Special_Products/Gavran_Ghee_500g_700.jpg` |

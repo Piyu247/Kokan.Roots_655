@@ -80,6 +80,6 @@ export const categories: Category[] = [
     descriptionEn: 'Pure wood-pressed virgin coconut oil, curated wellness kits, and rare seasonal Konkan specialities.',
     descriptionMr: 'लाकडी घाण्याचे शुद्ध नारळ तेल, मधुमेही विशेष किट आणि कोकणातील दुर्मीळ वाण.',
     image: '/assets/products/09_Special_Products/Diabetic_Care_Kit_1kit_800.webp',
-    itemCount: 1
+    itemCount: 2
   }
 ];
