@@ -5,6 +5,7 @@ import { products } from '../data/products';
 import type { Language } from '../types';
 import { translations } from '../data/translations';
 import { getCategoryTheme } from '../data/categoryThemes';
+import { LiquidImage } from './LiquidImage';
 
 interface CategoryGridProps {
   language: Language;
@@ -70,14 +71,14 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({
                     className="hidden sm:block absolute inset-1.5 sm:inset-2 rounded-lg sm:rounded-xl border border-white/40 -z-0"
                   />
                   
-                  <img
+                  <LiquidImage
                     src={cat.image}
                     alt={language === 'mr' ? cat.nameMr : cat.nameEn}
                     width="400"
                     height="300"
-                    loading="lazy"
-                    decoding="async"
-                    className="relative z-10 max-h-full max-w-full w-auto h-auto object-contain drop-shadow-xs group-hover:scale-105 transition-transform duration-300 ease-out"
+                    containerBg="transparent"
+                    containerClassName="relative z-10 w-full h-full flex items-center justify-center"
+                    imageClassName="max-h-full max-w-full w-auto h-auto object-contain drop-shadow-xs group-hover:scale-105 transition-transform duration-300 ease-out"
                   />
 
                   {/* Floating Explore Pill (tablet/desktop only) */}

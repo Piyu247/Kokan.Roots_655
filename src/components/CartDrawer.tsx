@@ -3,6 +3,7 @@ import { X, Trash2, Plus, Minus, ShoppingBag, ArrowRight, Sparkles, MessageCircl
 import type { CartItem, Language } from '../types';
 import { translations } from '../data/translations';
 import { lockBodyScroll, unlockBodyScroll } from '../utils/scrollLock';
+import { LiquidImage } from './LiquidImage';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -115,16 +116,17 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     key={item.product.id}
                     className="flex gap-4 p-3.5 bg-white rounded-2xl border border-[#EDE5D2] shadow-xs hover:border-[#A8BEA3]/60 transition-colors"
                   >
-                    {/* Thumbnail */}
+                    {/* Thumbnail with Liquid Reveal */}
                     <div className="w-20 h-20 rounded-xl overflow-hidden bg-[#EDE5D2]/70 shrink-0 flex items-center justify-center p-1">
-                      <img
+                      <LiquidImage
                         src={item.product.image.endsWith('.webp') ? item.product.image.replace(/\.webp$/, '.thumb.webp') : item.product.image}
+                        fallbackSrc={item.product.image}
                         alt={name}
                         width="80"
                         height="80"
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-contain"
+                        containerBg="transparent"
+                        containerClassName="w-full h-full"
+                        imageClassName="object-contain"
                       />
                     </div>
 

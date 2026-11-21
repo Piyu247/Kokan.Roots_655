@@ -5,6 +5,7 @@ import { translations } from '../data/translations';
 import { getWhatsAppUrl } from '../utils/whatsapp';
 import { lockBodyScroll, unlockBodyScroll } from '../utils/scrollLock';
 import { getCategoryTheme } from '../data/categoryThemes';
+import { LiquidImage } from './LiquidImage';
 
 interface ProductModalProps {
   product: Product | null;
@@ -109,21 +110,23 @@ export const ProductModal: React.FC<ProductModalProps> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2">
           
-          {/* Left: Product Image Area with Category Tinted Background */}
+          {/* Left: Product Image Area with Category Tinted Background & Liquid Reveal */}
           <div 
             className="relative aspect-square md:aspect-auto h-52 sm:h-64 md:h-full overflow-hidden flex items-center justify-center p-4 transition-colors"
             style={{ backgroundColor: theme.containerBg }}
           >
-            <img
+            <LiquidImage
               src={product.image}
               alt={name}
               width="600"
               height="600"
-              decoding="async"
-              className="w-full h-full object-contain"
+              priority={true}
+              containerBg={theme.containerBg}
+              containerClassName="w-full h-full"
+              imageClassName="object-contain"
             />
             {product.origin && (
-              <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-xs text-white px-3 py-1 rounded-full text-xs flex items-center gap-1.5 font-medium">
+              <div className="absolute bottom-4 left-4 z-20 bg-black/60 backdrop-blur-xs text-white px-3 py-1 rounded-full text-xs flex items-center gap-1.5 font-medium">
                 <MapPin className="w-3.5 h-3.5 text-[#A8BEA3]" />
                 <span>{product.origin}</span>
               </div>

@@ -116,3 +116,148 @@ img {
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+
+/* ==========================================================================
+   PREMIUM BOTANICAL LIQUID REVEAL ANIMATIONS
+   Colors: Warm Ivory (#F7F3E9), Forest Green (#234B35), Kokum (#762E3F), Gold (#C6A46A)
+   ========================================================================== */
+
+@keyframes liquid-flow-primary {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes liquid-flow-secondary {
+  0% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes leaf-drift {
+  0% {
+    transform: translate(-50%, -50%) rotate(-8deg) translateY(0);
+  }
+  50% {
+    transform: translate(-45%, -55%) rotate(12deg) translateY(-8px);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-8deg) translateY(0);
+  }
+}
+
+@keyframes liquid-rise {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(30%);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes liquid-wave-1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-35%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes liquid-wave-2 {
+  0% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+@keyframes liquid-mask-reveal {
+  0% {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+  }
+  40% {
+    clip-path: polygon(0% 65%, 25% 72%, 60% 58%, 85% 68%, 100% 62%, 100% 100%, 0% 100%);
+    opacity: 0.85;
+  }
+  75% {
+    clip-path: polygon(0% 20%, 30% 12%, 65% 24%, 90% 16%, 100% 18%, 100% 100%, 0% 100%);
+    opacity: 0.96;
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 1;
+  }
+}
+
+.animate-liquid-flow-primary {
+  animation: liquid-flow-primary 9s ease-in-out infinite;
+}
+
+.animate-liquid-flow-secondary {
+  animation: liquid-flow-secondary 12s ease-in-out infinite;
+}
+
+.animate-leaf-drift {
+  animation: leaf-drift 4.5s ease-in-out infinite;
+}
+
+.animate-liquid-rise {
+  animation: liquid-rise 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-liquid-wave-1 {
+  animation: liquid-wave-1 4s ease-in-out infinite;
+}
+
+.animate-liquid-wave-2 {
+  animation: liquid-wave-2 5.5s ease-in-out infinite;
+}
+
+/* Fluid reveal class applied once image triggers onLoad */
+.liquid-reveal-active {
+  animation: liquid-mask-reveal 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: clip-path, opacity;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-liquid-flow-primary,
+  .animate-liquid-flow-secondary,
+  .animate-leaf-drift,
+  .animate-liquid-rise,
+  .animate-liquid-wave-1,
+  .animate-liquid-wave-2,
+  .liquid-reveal-active {
+    animation: none !important;
+    clip-path: none !important;
+    opacity: 1 !important;
+  }
+}
+

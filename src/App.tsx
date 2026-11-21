@@ -15,9 +15,11 @@ import { EnquiryModal } from './components/EnquiryModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { MobileBottomCartBar } from './components/MobileBottomCartBar';
 import { CartToast } from './components/CartToast';
+import { LiquidPreloader } from './components/LiquidPreloader';
 import type { Product, CartItem, Language } from './types';
 
 export const App: React.FC = () => {
+  
   // Language State
   const [language, setLanguage] = useState<Language>(() => {
     const saved = localStorage.getItem('kokan_roots_lang');
@@ -52,6 +54,24 @@ export const App: React.FC = () => {
     message: ''
   });
   const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Full-Screen Liquid Opening Animation (Shown only on initial fresh session)
+  const [showPreloader, setShowPreloader] = useState<boolean>(() => {
+    try {
+      return !sessionStorage.getItem('kokan_roots_loaded');
+    } catch {
+      return false;
+    }
+  });
+
+  const handlePreloaderComplete = () => {
+    setShowPreloader(false);
+    try {
+      sessionStorage.setItem('kokan_roots_loaded', 'true');
+    } catch {
+      // storage unavailable
+    }
+  };
 
   // Clean up toast timer on unmount
   useEffect(() => {
@@ -275,6 +295,11 @@ export const App: React.FC = () => {
         language={language}
         hasCartItems={cart.length > 0}
       />
+
+      {/* Cinematic Full-Screen Botanical Liquid Reveal Preloader */}
+      {showPreloader && (
+        <LiquidPreloader onComplete={handlePreloaderComplete} />
+      )}
     </div>
   );
 };
