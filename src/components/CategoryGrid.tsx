@@ -73,8 +73,11 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({
                   <img
                     src={cat.image}
                     alt={language === 'mr' ? cat.nameMr : cat.nameEn}
-                    className="relative z-10 max-h-full max-w-full w-auto h-auto object-contain drop-shadow-xs group-hover:scale-105 transition-transform duration-300 ease-out"
+                    width="400"
+                    height="300"
                     loading="lazy"
+                    decoding="async"
+                    className="relative z-10 max-h-full max-w-full w-auto h-auto object-contain drop-shadow-xs group-hover:scale-105 transition-transform duration-300 ease-out"
                   />
 
                   {/* Floating Explore Pill (tablet/desktop only) */}

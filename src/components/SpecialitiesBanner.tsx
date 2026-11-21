@@ -86,10 +86,13 @@ export const SpecialitiesBanner: React.FC<SpecialitiesBannerProps> = ({
             {/* Right Photography Column: Featuring the Authentic Kombdi Vade */}
             <div className="lg:col-span-5 relative h-52 sm:h-72 lg:h-full min-h-[420px] overflow-hidden bg-[#1A392B]">
               <img
-                src="/assets/images/kombdi_vade.png"
+                src="/assets/images/kombdi_vade.webp"
                 alt="Traditional Konkan Malvani Kombdi Vade on terracotta plate"
+                width="639"
+                height="1024"
                 className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#244D3A] via-transparent to-transparent hidden lg:block" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#244D3A] via-transparent to-transparent lg:hidden" />

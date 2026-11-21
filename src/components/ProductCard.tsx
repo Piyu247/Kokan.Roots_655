@@ -9,17 +9,26 @@ interface ProductCardProps {
   language: Language;
   onAddToCart: (product: Product) => void;
   onQuickView: (product: Product) => void;
+  priority?: boolean;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
   product,
   language,
   onAddToCart,
-  onQuickView
+  onQuickView,
+  priority = false
 }) => {
   const [justAdded, setJustAdded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const t = translations[language];
   const theme: CategoryTheme = getCategoryTheme(product.categoryId);
+
+  // Generate thumbnail URL if webp
+  const thumbUrl = product.image.endsWith('.webp')
+    ? product.image.replace(/\.webp$/, '.thumb.webp')
+    : product.image;
 
   const handleAdd = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -44,16 +53,37 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       }}
       className="group relative flex flex-col rounded-2xl overflow-hidden border shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer"
     >
-      {/* Product Image Area — category-tinted container, original photos untouched */}
+      {/* Product Image Area — category-tinted container */}
       <div
         style={{ backgroundColor: theme.containerBg, aspectRatio: '4/3' }}
         className="relative w-full overflow-hidden flex items-center justify-center p-2"
       >
+        {/* Subtle shimmer skeleton placeholder while loading */}
+        {!imageLoaded && !imageError && (
+          <div className="absolute inset-0 bg-white/20 animate-pulse pointer-events-none" />
+        )}
+
         <img
-          src={product.image}
+          src={thumbUrl}
+          srcSet={`${thumbUrl} 400w, ${product.image} 800w`}
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           alt={name}
-          className="w-full h-full object-contain group-hover:scale-106 transition-transform duration-500 ease-out"
-          loading="lazy"
+          width="400"
+          height="300"
+          loading={priority ? 'eager' : 'lazy'}
+          fetchPriority={priority ? 'high' : 'auto'}
+          decoding="async"
+          onLoad={() => setImageLoaded(true)}
+          onError={(e) => {
+            setImageError(true);
+            // Fallback to full image if thumb fails
+            if (e.currentTarget.src !== product.image) {
+              e.currentTarget.src = product.image;
+            }
+          }}
+          className={`w-full h-full object-contain group-hover:scale-106 transition-all duration-500 ease-out ${
+            imageLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
         />
 
         {/* Product Badges — use category dark accent */}

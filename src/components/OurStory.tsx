@@ -52,10 +52,13 @@ export const OurStory: React.FC<OurStoryProps> = ({ language }) => {
               {/* Arch Card 1: Coastal Landscape & Coconut groves */}
               <div className="relative overflow-hidden rounded-t-[100px] rounded-b-2xl shadow-xl border-2 border-[#A8BEA3]/60 bg-[#244D3A]">
                 <img
-                  src="/assets/images/konkan_coastal.jpg"
+                  src="/assets/images/konkan_coastal.webp"
                   alt="Konkan coastal greenery and coconut groves"
+                  width="800"
+                  height="532"
                   className="w-full h-44 sm:h-64 lg:h-80 object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 text-[#F8F4EA] text-xs font-medium">
@@ -66,10 +69,13 @@ export const OurStory: React.FC<OurStoryProps> = ({ language }) => {
               {/* Arch Card 2: Physical Store & Packaged presentation */}
               <div className="relative overflow-hidden rounded-t-[100px] rounded-b-2xl shadow-xl border-2 border-[#6B4633]/60 bg-[#6B4633] translate-y-4">
                 <img
-                  src="/assets/images/shop/media_1792632786384.jpg"
+                  src="/assets/images/shop/media_1792632786384.webp"
                   alt="Kokan Roots physical retail store display and atmosphere"
+                  width="601"
+                  height="800"
                   className="w-full h-52 sm:h-72 lg:h-96 object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 text-[#F8F4EA] text-xs font-medium">

@@ -118,8 +118,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     {/* Thumbnail */}
                     <div className="w-20 h-20 rounded-xl overflow-hidden bg-[#EDE5D2]/70 shrink-0 flex items-center justify-center p-1">
                       <img
-                        src={item.product.image}
+                        src={item.product.image.endsWith('.webp') ? item.product.image.replace(/\.webp$/, '.thumb.webp') : item.product.image}
                         alt={name}
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-contain"
                       />
                     </div>

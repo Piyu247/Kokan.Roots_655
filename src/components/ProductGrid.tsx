@@ -217,13 +217,14 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
         {/* Product Cards Grid */}
         {sortedProducts.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-7">
-            {sortedProducts.map((product) => (
+            {sortedProducts.map((product, index) => (
               <ProductCard
                 key={product.id}
                 product={product}
                 language={language}
                 onAddToCart={onAddToCart}
                 onQuickView={onQuickView}
+                priority={index < 4}
               />
             ))}
           </div>

@@ -1,0 +1,26 @@
+# Cache-Control headers for Netlify CDN static asset caching
+
+# Immutable long-term caching for hashed build assets (JS, CSS)
+/assets/*-*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*-*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache-Control for optimized images: 1 year public cache with stale-while-revalidate
+/assets/images/*
+  Cache-Control: public, max-age=31536000, stale-while-revalidate=86400
+
+/assets/products/*
+  Cache-Control: public, max-age=31536000, stale-while-revalidate=86400
+
+/images/*
+  Cache-Control: public, max-age=31536000, stale-while-revalidate=86400
+
+# HTML documents: always validate to ensure fresh content
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+

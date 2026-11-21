@@ -110,10 +110,14 @@ export const Hero: React.FC<HeroProps> = ({ language }) => {
               {/* Dark Wood Framing border */}
               <div className="relative overflow-hidden rounded-2xl lg:rounded-t-[130px] lg:rounded-b-2xl shadow-2xl border-4 border-[#F8F4EA] bg-[#6B4633]">
                 <img
-                  src="/assets/images/hero_feast.jpg"
+                  src="/assets/images/hero_feast.webp"
                   alt="Traditional Konkan food delicacies flat lay including cashews, pickles, red poha, and red rice"
+                  width="1376"
+                  height="768"
                   className="w-full h-[240px] sm:h-[380px] lg:h-[500px] object-cover hover:scale-103 transition-transform duration-700"
                   loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                 />
 
                 {/* Ambient dark gradient overlay at bottom for card badge */}
@@ -137,8 +141,12 @@ export const Hero: React.FC<HeroProps> = ({ language }) => {
               <div className="hidden sm:flex absolute -bottom-5 -right-5 bg-[#244D3A] text-[#F8F4EA] p-3.5 rounded-2xl shadow-xl border-2 border-[#A8BEA3] items-center gap-3 max-w-[210px]">
                 <div className="w-10 h-10 rounded-xl bg-[#F8F4EA] overflow-hidden shrink-0">
                   <img
-                    src="/assets/images/kaju_cashews.jpg"
+                    src="/assets/images/kaju_cashews.webp"
                     alt="Cashew"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>

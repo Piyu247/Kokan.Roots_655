@@ -117,6 +117,9 @@ export const ProductModal: React.FC<ProductModalProps> = ({
             <img
               src={product.image}
               alt={name}
+              width="600"
+              height="600"
+              decoding="async"
               className="w-full h-full object-contain"
             />
             {product.origin && (

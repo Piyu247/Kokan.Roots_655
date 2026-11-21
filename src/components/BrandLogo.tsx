@@ -25,8 +25,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       <div className={`flex items-center gap-3 select-none ${className}`}>
         {/* Main circular brand logo */}
         <img
-          src="/images/kokan-roots-logo.png"
+          src="/images/kokan-roots-logo.webp"
           alt={siteConfig.brandName}
+          width="64"
+          height="64"
+          loading="eager"
+          decoding="async"
           className="w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-full ring-2 ring-[#EDE5D2]/30 shadow-md bg-[#F8F4EA] shrink-0"
         />
         <div className="flex flex-col items-start">
@@ -48,8 +52,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     <div className={`flex items-center gap-2 sm:gap-2.5 select-none ${className}`}>
       {/* Main circular logo of Kokan Roots on the left */}
       <img
-        src="/images/kokan-roots-logo.png"
+        src="/images/kokan-roots-logo.webp"
         alt={siteConfig.brandName}
+        width="40"
+        height="40"
+        loading="eager"
+        decoding="async"
         className="w-9 h-9 sm:w-10 sm:h-10 object-contain rounded-full shadow-xs border border-[#A8BEA3]/40 bg-[#F8F4EA] shrink-0 transition-transform duration-300 hover:scale-105"
       />
 
